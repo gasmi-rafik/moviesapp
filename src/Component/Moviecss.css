@@ -1,0 +1,23 @@
+.movie {
+ 
+  width: 275px;
+  height: 580px;
+  border-radius: 25px;
+  }
+
+  .movie-area{
+    width: 180px;
+    height: 250px;
+    border-radius: 25px;
+    background-color: #00587a;
+  }
+   img {
+     border-radius: 25px;
+   }
+
+  .cards {
+ 
+  display: flex ;
+  /* justify-content: space-between ; */
+  flex-wrap :wrap
+  }
