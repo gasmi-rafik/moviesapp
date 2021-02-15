@@ -9,13 +9,12 @@ export default function Moviecard( { index , film: {name , url , rate , id}}) {
             <div className="movie-area">
                <div  key={index} >
                <img src={url}  style={{width: "150px", height: "250px" }} />
-               <Router>
+              
                    
                <Link to ={`Info/${id}`}> 
                <p>{name}</p>
                </Link>
-                
-               </Router>
+             
                <Rating rate={rate} />
                
 
