@@ -25,14 +25,14 @@ function App() {
       <Router>
    
 
-      <Route exact path ='/' component ={()=>
+      <Route exact path ='/' render ={()=>
       <Navbar setName={setName} setRatingsearch={setRatingsearch} ratingSearch={ratingSearch} />} />
-       <Route exact path ='/' component ={()=>
+       <Route exact path ='/' render ={()=>
        <MovieList movie={movie} setMovie={setMovie}  name={name} setName={setName} setRatingsearch={setRatingsearch} ratingSearch={ratingSearch} />} />
-      <Route exact path ='/' component ={()=>
+      <Route exact path ='/' render ={()=>
        <AddMovie addMv={addMv}/> } />
        
-         <Route path ='/info/:id' component ={()=><Info movie={movie} setMovie={setMovie} />} />
+         <Route path ='/info/:id' render ={()=><Info movie={movie} setMovie={setMovie} />} />
          
        </Router>
       </header>
